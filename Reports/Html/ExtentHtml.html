@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nis 24, 2023 11:06:57 ÖS</span>
+			<span class='label blue darken-3 suite-start-time'>Nis 25, 2023 10:46:11 ÖS</span>
 			</a>
 		</ul>
 	</div>
@@ -76,8 +76,9 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Sahibinden</a></li>
-					<li><a href='#'>@CheckFilters</a></li>
+					<li><a href='#'>@ButtonsPage</a></li>
+					<li><a href='#'>@ApiDemos</a></li>
+					<li><a href='#'>@CheckActions</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -158,7 +159,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>17</span> steps passed</span>
+                    <span class='strong'>6</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -187,8 +188,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Sahibinden</span>
-						<span class='test-time'>Nis 24, 2023 11:06:57 ÖS</span>
+						<span class='test-name'>Api Demos</span>
+						<span class='test-time'>Nis 25, 2023 10:46:12 ÖS</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -201,100 +202,46 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 35.710</span>
+	<span class='duration right label'>00 00 15.910</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Check Filters</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Check Buttons Page Actions</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@Sahibinden</span>
-				<span class='category label'>@CheckFilters</span>
+				<span class='category label'>@ButtonsPage</span>
+				<span class='category label'>@ApiDemos</span>
+				<span class='category label'>@CheckActions</span>
 		</div>
 	
 	<ul class='steps'>
 		<li test-id='5' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.HomePageSteps.userShouldSeeTheHomePage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user should see the Home Page</div>
+			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.userIsOnTheButtonsPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is on the Buttons Page</div>
 
 
 		</li>
-		<li test-id='8' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.HomePageSteps.tapsOnHomePage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps "Vasıta" on Home Page</div>
+		<li test-id='8' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.shouldNormalButtonOnButtonsPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should Normal Button "NORMAL" on Buttons Page</div>
 
 
 		</li>
-		<li test-id='11' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.CategoriesPageSteps.tapsCloseButtonOnCategoriesPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps Close Button on Categories Page</div>
+		<li test-id='11' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.shouldSmallButtonOnButtonsPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should Small Button "SMALL" on Buttons Page</div>
 
 
 		</li>
-		<li test-id='14' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.CategoriesPageSteps.tapsOnCategoriesPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps "Otomobil" on Categories Page</div>
+		<li test-id='14' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.shouldSwitchButtonOnButtonsPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should Switch Button "KAPALI" on Buttons Page</div>
 
 
 		</li>
 		<li test-id='17' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.CategoriesPageSteps.tapsOnCategoriesPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps "Alfa Romeo" on Categories Page</div>
+			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.tapsSwitchButtonOnButtonsPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps Switch Button on Buttons Page</div>
 
 
 		</li>
-		<li test-id='20' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.CategoriesPageSteps.tapsOnCategoriesPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps "156" on Categories Page</div>
-
-
-		</li>
-		<li test-id='23' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.CategoriesPageSteps.tapsOnCategoriesPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps "1.6 TS" on Categories Page</div>
-
-
-		</li>
-		<li test-id='26' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.CategoriesPageSteps.tapsOnCategoriesPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps "1.6 TS" on Categories Page</div>
-
-
-		</li>
-		<li test-id='29' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.PopupSteps.tapsButtonOnPopup(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps "Devam Et" button on Popup</div>
-
-
-		</li>
-		<li test-id='32' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.ResultsPageSteps.tapsFiltersOnResultPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps filters on Result Page</div>
-
-
-		</li>
-		<li test-id='35' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.FiltersPageSteps.tapsOnFiltersPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps "Fiyat" on Filters Page</div>
-
-
-		</li>
-		<li test-id='38' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.FiltersPageSteps.sendkeysMaxPriceOnFiltersPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When sendkeys Max Price "200000" on Filters Page</div>
-
-
-		</li>
-		<li test-id='41' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.FiltersPageSteps.tapsButtonOnFiltersPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps "TAMAM" button on Filters Page</div>
-
-
-		</li>
-		<li test-id='44' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.FiltersPageSteps.tapsShowResultsButtonOnFiltersPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps Show Results Button on Filters Page</div>
-
-
-		</li>
-		<li test-id='47' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.ResultsPageSteps.tapsOrderOnResultPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps order on Result Page</div>
-
-
-		</li>
-		<li test-id='50' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.OrderPageSteps.selectOnOrderPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When select "Fiyata göre (Önce en yüksek)" on Order Page</div>
-
-
-		</li>
-		<li test-id='53' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.ResultsPageSteps.shouldSeeFirstCarPriceLowerThanOrEqualsOnResultPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should see first car price lower than or equals "200.000 TL" on Result Page</div>
+		<li test-id='20' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.shouldSwitchButtonOnButtonsPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should Switch Button "AÇIK" on Buttons Page</div>
 
 
 		</li>
@@ -344,7 +291,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Sahibinden</span>
+						<span class='category-name'>@ButtonsPage</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -366,8 +313,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nis 24, 2023 11:06:57 ÖS</td>
-										<td class='linked' test-id='2'>Check Filters</td>
+										<td>Nis 25, 2023 10:46:12 ÖS</td>
+										<td class='linked' test-id='2'>Check Buttons Page Actions</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -377,7 +324,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@CheckFilters</span>
+						<span class='category-name'>@ApiDemos</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -399,8 +346,41 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nis 24, 2023 11:06:57 ÖS</td>
-										<td class='linked' test-id='2'>Check Filters</td>
+										<td>Nis 25, 2023 10:46:12 ÖS</td>
+										<td class='linked' test-id='2'>Check Buttons Page Actions</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CheckActions</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nis 25, 2023 10:46:12 ÖS</td>
+										<td class='linked' test-id='2'>Check Buttons Page Actions</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -437,25 +417,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>17</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nis 24, 2023 11:06:57 ÖS</div>
+					<div class='panel-lead'>Nis 25, 2023 10:46:11 ÖS</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nis 24, 2023 11:07:33 ÖS</div>
+			 		<div class='panel-lead'>Nis 25, 2023 10:46:28 ÖS</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 36.392</div>
+					<div class='panel-lead'>00 00 16.631</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -471,7 +451,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Sahibinden</td>
+							<td>@ButtonsPage</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -480,7 +460,16 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@CheckFilters</td>
+							<td>@ApiDemos</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@CheckActions</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -514,8 +503,8 @@
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 17,
-				passGrandChild: 17,
+				grandChildCount: 6,
+				passGrandChild: 6,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -527,7 +516,7 @@
 		
 		<script>
 			var timeline = {
-			        "Sahibinden":35.713
+			        "Api Demos":15.914
 			};
 		</script>
 		

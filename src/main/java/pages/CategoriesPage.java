@@ -8,20 +8,19 @@ public class CategoriesPage {
 
     ElementHelper elementHelper;
 
-    By tabs = By.id("com.sahibinden:id/util_primary_text");
-    By closeButton = By.xpath("//android.widget.FrameLayout/android.widget.ImageView[2]");
-
+    By title = By.id("android:id/action_bar");
+    By categories = By.id("android:id/text1");
 
     public CategoriesPage(WebDriver driver) {
         this.elementHelper = new ElementHelper(driver);
     }
 
-    public void clickTab(String tab) {
-        elementHelper.clickElementWithText(tabs, tab);
+    public void checkCategoriesPage() {
+        elementHelper.checkElement(title);
     }
 
-    public void clickCloseButton() {
-        elementHelper.click(closeButton);
+    public void clickCategory(String category) {
+        elementHelper.clickElementWithText(categories,category);
     }
 
 

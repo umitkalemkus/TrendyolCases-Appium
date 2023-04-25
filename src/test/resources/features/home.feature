@@ -1,32 +1,38 @@
-@Sahibinden
-Feature: Sahibinden
+@ApiDemos
+Feature: Api Demos
 
-  @CheckResult
-  Scenario: Check Search Result
-    Given user should see the Home Page
-    When taps "Emlak" on Home Page
-    When taps "Konut" on Categories Page
-    When taps "Satılık" on Categories Page
-    When taps "Daire" on Categories Page
-    When taps "Devam Et" button on Popup
-    Then should see Results on Result Page
+  @ButtonsPage
+  Scenario: Check Buttons Page
+    Given user should see the Categories Page
+    When taps "Views" on Categories Page
+    When taps "Buttons" on Categories Page
+    Then should see Title "Views/Buttons" on Buttons Page
 
-  @CheckFilters
-  Scenario: Check Filters
-    Given user should see the Home Page
-    When taps "Vasıta" on Home Page
-    When taps Close Button on Categories Page
-    When taps "Otomobil" on Categories Page
-    When taps "Alfa Romeo" on Categories Page
-    When taps "156" on Categories Page
-    When taps "1.6 TS" on Categories Page
-    When taps "1.6 TS" on Categories Page
-    When taps "Devam Et" button on Popup
-    When taps filters on Result Page
-    When taps "Fiyat" on Filters Page
-    When sendkeys Max Price "200000" on Filters Page
-    When taps "TAMAM" button on Filters Page
-    When taps Show Results Button on Filters Page
-    When taps order on Result Page
-    When select "Fiyata göre (Önce en yüksek)" on Order Page
-    Then should see first car price lower than or equals "200.000 TL" on Result Page
+  @ButtonsPage @CheckActions
+  Scenario: Check Buttons Page Actions
+    Given user is on the Buttons Page
+    Then should Normal Button "NORMAL" on Buttons Page
+    Then should Small Button "SMALL" on Buttons Page
+    Then should Switch Button "KAPALI" on Buttons Page
+    When taps Switch Button on Buttons Page
+    Then should Switch Button "AÇIK" on Buttons Page
+
+
+  @PopupMenuPage
+  Scenario: Check Popup Menu Page
+    Given user should see the Categories Page
+    When taps "Views" on Categories Page
+    When taps "Popup Menu" on Categories Page
+    Then should see Title "Views/Popup Menu" on Popup Menu Page
+
+  @PopupMenuPage @CheckActions
+  Scenario: Check Popup Menu Page Actions
+    Given user is on the Popup Menu Page
+    Then should Make Popup Button "" on Popup Menu Page
+    When taps Make Popup Button on Popup Menu Page
+    Then should see Popup Element "" on Popup Menu Page
+    Then should see Popup Element "" on Popup Menu Page
+    Then should see Popup Element "" on Popup Menu Page
+    When taps Popup Element "" on Popup Menu Page
+    Then should see Popup Menu Tite "" on Popup Menu Page
+
