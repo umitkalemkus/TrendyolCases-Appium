@@ -35,7 +35,8 @@ public class ButtonsPageSteps {
     @Then("should Small Button {string} on Buttons Page")
     public void shouldSmallButtonOnButtonsPage(String button) {
         String currentButton = buttonsPage.getTextSmallButton();
-        Assert.assertEquals(currentButton,button);    }
+        Assert.assertEquals(currentButton,button);
+    }
 
     @Then("should Switch Button {string} on Buttons Page")
     public void shouldSwitchButtonOnButtonsPage(String button) {

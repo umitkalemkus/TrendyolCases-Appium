@@ -1,5 +1,6 @@
 package utils;
 
+import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.PointerInput;
@@ -39,6 +40,11 @@ public class ElementHelper {
 
     public void checkElement(By locator) {
         findElement(locator);
+    }
+
+    public void pressEnter() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("mobile:performEditorAction", ImmutableMap.of("action", "done"));
     }
 
     public void click(By locator) {
