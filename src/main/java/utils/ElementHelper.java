@@ -76,6 +76,28 @@ public class ElementHelper {
         Assert.assertTrue(check, "Listede istediğin textteki elamanı bulamadım!!!");
     }
 
+    public void checkElementWithText(By locator, String text) {
+        int i = 0;
+        boolean check = false;
+        findElement(locator);
+        while (i < 4) {
+            List<WebElement> elementList = findElements(locator);
+            for (WebElement elem : elementList) {
+                if (elem.getText().equals(text)) {
+                    check = true;
+                    break;
+                }
+            }
+            if (check) {
+                break;
+            } else {
+                scrollDown();
+                i++;
+            }
+        }
+        Assert.assertTrue(check, "Listede istediğin textteki elamanı bulamadım!!!");
+    }
+
     public List<WebElement> scroll(By by) {
         int i = 0;
         String previusPageSource = ".";

@@ -17,7 +17,6 @@ Feature: Api Demos
     When taps Switch Button on Buttons Page
     Then should Switch Button "AÇIK" on Buttons Page
 
-
   @PopupMenuPage
   Scenario: Check Popup Menu Page
     Given user should see the Categories Page
@@ -28,11 +27,11 @@ Feature: Api Demos
   @PopupMenuPage @CheckActions
   Scenario: Check Popup Menu Page Actions
     Given user is on the Popup Menu Page
-    Then should Make Popup Button "" on Popup Menu Page
+    Then should Make Popup Button "MAKE A POPUP!" on Popup Menu Page
     When taps Make Popup Button on Popup Menu Page
-    Then should see Popup Element "" on Popup Menu Page
-    Then should see Popup Element "" on Popup Menu Page
-    Then should see Popup Element "" on Popup Menu Page
-    When taps Popup Element "" on Popup Menu Page
-    Then should see Popup Menu Tite "" on Popup Menu Page
+    Then should see Popup Element "Search" on Popup Menu Page
+    Then should see Popup Element "Add" on Popup Menu Page
+    Then should see Popup Element "Edit" on Popup Menu Page
+    When taps Popup Element "Edit" on Popup Menu Page
+    Then should see Popup Menu Title "Edit" on Popup Menu Page
 

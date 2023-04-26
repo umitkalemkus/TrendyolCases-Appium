@@ -7,7 +7,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 @CucumberOptions(
-        tags = "@CheckActions",
+        tags = "@PopupMenuPage",
         features = "src/test/resources/features",
         glue = {"stepdefinitions", "utils"},
         plugin = {

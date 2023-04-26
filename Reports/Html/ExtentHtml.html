@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nis 25, 2023 10:46:11 ÖS</span>
+			<span class='label blue darken-3 suite-start-time'>Nis 26, 2023 08:59:24 ÖS</span>
 			</a>
 		</ul>
 	</div>
@@ -76,9 +76,9 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@ButtonsPage</a></li>
-					<li><a href='#'>@ApiDemos</a></li>
+					<li><a href='#'>@PopupMenuPage</a></li>
 					<li><a href='#'>@CheckActions</a></li>
+					<li><a href='#'>@ApiDemos</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -139,7 +139,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>1</span> scenarios passed</span>
+                    <span class='strong'>2</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -159,7 +159,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>6</span> steps passed</span>
+                    <span class='strong'>12</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -189,7 +189,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Api Demos</span>
-						<span class='test-time'>Nis 25, 2023 10:46:12 ÖS</span>
+						<span class='test-time'>Nis 26, 2023 08:59:24 ÖS</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -202,46 +202,92 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 15.910</span>
+	<span class='duration right label'>00 00 19.375</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Check Buttons Page Actions</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Check Popup Menu Page</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@ButtonsPage</span>
+				<span class='category label'>@PopupMenuPage</span>
+				<span class='category label'>@ApiDemos</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='5' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.CategoriesPageSteps.userShouldSeeTheCategoriesPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user should see the Categories Page</div>
+
+
+		</li>
+		<li test-id='8' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.CategoriesPageSteps.tapsOnCategoriesPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps "Views" on Categories Page</div>
+
+
+		</li>
+		<li test-id='11' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.CategoriesPageSteps.tapsOnCategoriesPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps "Popup Menu" on Categories Page</div>
+
+
+		</li>
+		<li test-id='14' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.PopupMenuPageSteps.shouldSeeTitleOnPopupMenuPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should see Title "Views/Popup Menu" on Popup Menu Page</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='17' status='pass'>
+
+	<span class='duration right label'>00 00 22.500</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Check Popup Menu Page Actions</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@PopupMenuPage</span>
 				<span class='category label'>@ApiDemos</span>
 				<span class='category label'>@CheckActions</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='5' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.userIsOnTheButtonsPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is on the Buttons Page</div>
+		<li test-id='20' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.PopupMenuPageSteps.userIsOnThePopupMenuPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is on the Popup Menu Page</div>
 
 
 		</li>
-		<li test-id='8' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.shouldNormalButtonOnButtonsPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should Normal Button "NORMAL" on Buttons Page</div>
+		<li test-id='23' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.PopupMenuPageSteps.shouldMakePopupButtonOnPopupMenuPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should Make Popup Button "MAKE A POPUP!" on Popup Menu Page</div>
 
 
 		</li>
-		<li test-id='11' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.shouldSmallButtonOnButtonsPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should Small Button "SMALL" on Buttons Page</div>
+		<li test-id='26' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.PopupMenuPageSteps.tapsMakePopupButtonOnPopupMenuPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps Make Popup Button on Popup Menu Page</div>
 
 
 		</li>
-		<li test-id='14' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.shouldSwitchButtonOnButtonsPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should Switch Button "KAPALI" on Buttons Page</div>
+		<li test-id='29' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.PopupMenuPageSteps.shouldSeePopupElementOnPopupMenuPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should see Popup Element "Search" on Popup Menu Page</div>
 
 
 		</li>
-		<li test-id='17' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.tapsSwitchButtonOnButtonsPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps Switch Button on Buttons Page</div>
+		<li test-id='32' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.PopupMenuPageSteps.shouldSeePopupElementOnPopupMenuPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should see Popup Element "Add" on Popup Menu Page</div>
 
 
 		</li>
-		<li test-id='20' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepdefinitions.ButtonsPageSteps.shouldSwitchButtonOnButtonsPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should Switch Button "AÇIK" on Buttons Page</div>
+		<li test-id='35' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.PopupMenuPageSteps.shouldSeePopupElementOnPopupMenuPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should see Popup Element "Edit" on Popup Menu Page</div>
+
+
+		</li>
+		<li test-id='38' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.PopupMenuPageSteps.tapsPopupElementOnPopupMenuPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When taps Popup Element "Edit" on Popup Menu Page</div>
+
+
+		</li>
+		<li test-id='41' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.PopupMenuPageSteps.shouldSeePopupMenuTiteOnPopupMenuPage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then should see Popup Menu Title "Edit" on Popup Menu Page</div>
 
 
 		</li>
@@ -291,14 +337,14 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@ButtonsPage</span>
+						<span class='category-name'>@PopupMenuPage</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
 							
 						</div>
@@ -313,41 +359,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nis 25, 2023 10:46:12 ÖS</td>
-										<td class='linked' test-id='2'>Check Buttons Page Actions</td>
+										<td>Nis 26, 2023 08:59:24 ÖS</td>
+										<td class='linked' test-id='2'>Check Popup Menu Page</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@ApiDemos</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
 									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nis 25, 2023 10:46:12 ÖS</td>
-										<td class='linked' test-id='2'>Check Buttons Page Actions</td>
+										<td>Nis 26, 2023 08:59:44 ÖS</td>
+										<td class='linked' test-id='17'>Check Popup Menu Page Actions</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -379,8 +397,46 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nis 25, 2023 10:46:12 ÖS</td>
-										<td class='linked' test-id='2'>Check Buttons Page Actions</td>
+										<td>Nis 26, 2023 08:59:44 ÖS</td>
+										<td class='linked' test-id='17'>Check Popup Menu Page Actions</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ApiDemos</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nis 26, 2023 08:59:24 ÖS</td>
+										<td class='linked' test-id='2'>Check Popup Menu Page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Nis 26, 2023 08:59:44 ÖS</td>
+										<td class='linked' test-id='17'>Check Popup Menu Page Actions</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -411,31 +467,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>12</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nis 25, 2023 10:46:11 ÖS</div>
+					<div class='panel-lead'>Nis 26, 2023 08:59:24 ÖS</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nis 25, 2023 10:46:28 ÖS</div>
+			 		<div class='panel-lead'>Nis 26, 2023 09:00:06 ÖS</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 16.631</div>
+					<div class='panel-lead'>00 00 42.576</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -451,17 +507,8 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@ButtonsPage</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@ApiDemos</td>
-							<td>1</td>
+							<td>@PopupMenuPage</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -471,6 +518,15 @@
 						<tr>
 							<td>@CheckActions</td>
 							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ApiDemos</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -495,16 +551,16 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 1,
-				passChild: 1,
+				childCount: 2,
+				passChild: 2,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 6,
-				passGrandChild: 6,
+				grandChildCount: 12,
+				passGrandChild: 12,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -516,7 +572,7 @@
 		
 		<script>
 			var timeline = {
-			        "Api Demos":15.914
+			        "Api Demos":41.894
 			};
 		</script>
 		
