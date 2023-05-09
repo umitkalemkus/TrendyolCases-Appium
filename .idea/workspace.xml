@@ -5,24 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="720ca530-b565-471a-9097-6c82a0820cd2" name="Changes" comment="api demos">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RadioButtonPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SearchViewPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/RadioButtonPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/SearchViewPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/buttons.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/categories.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/popupMenu.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/radioButton.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/searchView.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/switches.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/visibility.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CountryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ResultPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/CountryPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/HomePageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ResultPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/SearchPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Reports/Html/ExtentHtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Html/ExtentHtml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Reports/Pdf/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Pdf/ExtentPdf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ElementHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ElementHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ButtonsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CategoriesPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PopupMenuPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RadioButtonPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchViewPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ButtonsPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ButtonsPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/home.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ButtonsPageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/CategoriesPageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/PopupMenuPageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/RadioButtonPageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/SearchViewPageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/buttons.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/buttons.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/categories.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/popupMenu.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/radioButton.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/searchView.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/switches.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/visibility.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +93,27 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/enese/OneDrive/Masaüstü/MobileFrameworks/Appium-Java/src/test/resources/testng.xml">
+  <component name="RunManager" selected="TestNG.TestRunner">
+    <configuration name="Scenario: Enes" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/buttons.feature" />
+      <option name="GLUE" value="stepdefinitions utils" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AppiumJava" />
+      <option name="NAME_FILTER" value="^Enes$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Enes$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Enes" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Appium-Java" />
       <method v="2">
@@ -123,8 +156,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/enese/OneDrive/Masaüstü/MobileFrameworks/Appium-Java/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="TestNG.C:/Users/enese/OneDrive/Masaüstü/MobileFrameworks/Appium-Java/src/test/resources/testng.xml" />
+        <item itemvalue="Cucumber Java.Scenario: Enes" />
       </list>
     </recent_temporary>
   </component>
@@ -188,6 +222,17 @@
     </task>
     <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ornek1" />
