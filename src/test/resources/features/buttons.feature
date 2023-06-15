@@ -12,6 +12,7 @@ Feature: Trendyol
     When sendkeys Search Area "tshirt" on Search Page
     Then should see the Result Page
     When taps Filter on Result Page
+#
 
   Scenario:
     Given should see the Filter Page

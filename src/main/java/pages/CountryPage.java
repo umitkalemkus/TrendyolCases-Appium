@@ -9,8 +9,8 @@ public class CountryPage {
     ElementHelper elementHelper;
 
     By Countries = By.className("country");
-    By CountriesDropdown = By.className("country");
-    By buttons = By.className("android.widget.Button");
+    By CountriesDropdown = By.className("//span[@class=\"selected-country-code\"]");
+    By cookieButton = By.xpath("//button[text()='ACCEPT']");
 
     public CountryPage(WebDriver driver) {
         this.elementHelper = new ElementHelper(driver);
@@ -22,16 +22,21 @@ public class CountryPage {
     }
 
     public void countryDropDown() {
-        elementHelper.pressEnter();
+        elementHelper.click(CountriesDropdown);
+
+
+    }
+
+
+    public void Cookies() {
+        elementHelper.click(cookieButton);
 
 
     }
 
 
 
-    public void clickButton(String button) {
-        elementHelper.clickElementWithText(buttons, button);
-    }
+
 
 
 

@@ -24,6 +24,8 @@ public class DriverManager {
     }
 
     public static void quitDriver() {
+
+
         if (driverThread.get() != null) {
             driverThread.get().quit();
             driverThread.remove();
